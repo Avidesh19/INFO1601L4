@@ -3,15 +3,116 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Lab 4</title>
 </head>
 <style>
+
+ * {
+     box-sizing: border-box;
+   }
+
+header, footer{
+	color: white;
+	background-color: #17153B;
+	flex-grow: 1;
+}
+
+header, footer, section, aside, main{
+        padding: 1em;
+}
+
+aside{
+	display: flex;
+	justify-content: center;
+	color: white;
+	background-color: #433D8B;
+	flex-grow: 3;
+}
+
+section{
+	background-color: #720455;
+	color: white;
+	flex-grow: 1;
+	margin: 0.5em;
+}
+
+main{
+	background-color:#2E236C ;
+	color: white;
+	flex-grow: 7;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	background-color: #CAF4FF;
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+        }
+
+div.row{
+	height: 80%;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+        }
+
+@media screen and (max-width: 600px) {
+  div.row{
+        	flex-direction: column;
+   }
+}
+
+p::after{
+	content: "- Additional stuff";
+}
+
+p::first-line{
+	color: coral;
+}
+
+h1::first-letter{
+	color: blue;
+}
+
+
 
 </style>
 <body>
 
+<!--
+<h1>Welcome</h1>
+<p>The sun dipped below the horizon, painting the sky in shades of orange and pink as the waves crashed gently against the shore. 
+   A cool breeze rustled through the palm trees, carrying the faint scent of salt and distant bonfires. Seagulls called out as they soared overhead, their silhouettes dark against the fading light. 
+   In the distance, laughter and music drifted from a small beachside café, where friends gathered over drinks and stories.
+   As the first stars appeared in the sky, a sense of peace settled over the quiet landscape, marking the perfect end to another day by the sea.</p>
+-->
+
+<header>Header</header>
+<div class="row">
+        <aside class="column">
+            Aside
+            <section>Section 1</section>
+            <section>Section 2</section>
+        </aside>
+        <main>Main</main>
+</div>
+
+    <footer>Footer</footer>
 
 
 	
 </body>
 </html>
+
+
+
